@@ -19,6 +19,8 @@
 		420FAEC6195D0A6000B060AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420FAEAE195D0A6000B060AE /* UIKit.framework */; };
 		420FAECE195D0A6100B060AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 420FAECC195D0A6100B060AE /* InfoPlist.strings */; };
 		420FAED0195D0A6100B060AE /* mayaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 420FAECF195D0A6100B060AE /* mayaTests.m */; };
+		420FAEDC195D0A9200B060AE /* BedroomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 420FAEDA195D0A9200B060AE /* BedroomViewController.m */; };
+		420FAEDD195D0A9200B060AE /* BedroomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 420FAEDB195D0A9200B060AE /* BedroomViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		420FAECB195D0A6100B060AE /* mayaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mayaTests-Info.plist"; sourceTree = "<group>"; };
 		420FAECD195D0A6100B060AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		420FAECF195D0A6100B060AE /* mayaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mayaTests.m; sourceTree = "<group>"; };
+		420FAED9195D0A9200B060AE /* BedroomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BedroomViewController.h; sourceTree = "<group>"; };
+		420FAEDA195D0A9200B060AE /* BedroomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BedroomViewController.m; sourceTree = "<group>"; };
+		420FAEDB195D0A9200B060AE /* BedroomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BedroomViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +112,9 @@
 		420FAEB0195D0A6000B060AE /* maya */ = {
 			isa = PBXGroup;
 			children = (
+				420FAED9195D0A9200B060AE /* BedroomViewController.h */,
+				420FAEDA195D0A9200B060AE /* BedroomViewController.m */,
+				420FAEDB195D0A9200B060AE /* BedroomViewController.xib */,
 				420FAEB9195D0A6000B060AE /* AppDelegate.h */,
 				420FAEBA195D0A6000B060AE /* AppDelegate.m */,
 				420FAEBC195D0A6000B060AE /* Images.xcassets */,
@@ -219,6 +227,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				420FAEDD195D0A9200B060AE /* BedroomViewController.xib in Resources */,
 				420FAEB5195D0A6000B060AE /* InfoPlist.strings in Resources */,
 				420FAEBD195D0A6000B060AE /* Images.xcassets in Resources */,
 			);
@@ -239,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				420FAEDC195D0A9200B060AE /* BedroomViewController.m in Sources */,
 				420FAEBB195D0A6000B060AE /* AppDelegate.m in Sources */,
 				420FAEB7195D0A6000B060AE /* main.m in Sources */,
 			);
