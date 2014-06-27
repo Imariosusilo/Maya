@@ -38,8 +38,7 @@
     [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionAutoreverse | UIViewAnimationOptionRepeat animations:^{
         self.girlView.transform = CGAffineTransformMakeRotation(3.0 * M_PI / 180.0);
     } completion:nil];
-    
-    
+
     // Do any additional setup after loading the view from its nib.
 }
 
