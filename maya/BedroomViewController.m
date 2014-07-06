@@ -11,9 +11,11 @@
 @interface BedroomViewController ()
 
 @property (weak, nonatomic) IBOutlet UIView *doorView;
+@property (weak, nonatomic) IBOutlet UIView *kitchenDoorView;
 @property (weak, nonatomic) IBOutlet UIImageView *girlView;
 
 - (IBAction)onTapBathroom:(UITapGestureRecognizer *)sender;
+- (IBAction)onTapKitchen:(UITapGestureRecognizer *)sender;
 
 @end
 
@@ -53,6 +55,11 @@
     [UIView animateWithDuration:1 delay:0 options:0 animations:^{
         self.girlView.center = CGPointMake(self.girlView.center.x + 550, self.girlView.center.y);
     } completion:nil];
+}
+
+- (IBAction)onTapKitchen:(UITapGestureRecognizer *)sender {[UIView animateKeyframesWithDuration:1 delay:0 options:0 animations:^{
+    self.girlView.center = CGPointMake(self.girlView.center.x+500, self.girlView.center.y);
+} completion:nil];
 }
 
 @end
