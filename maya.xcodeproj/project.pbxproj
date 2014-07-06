@@ -21,6 +21,10 @@
 		420FAED0195D0A6100B060AE /* mayaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 420FAECF195D0A6100B060AE /* mayaTests.m */; };
 		420FAEDC195D0A9200B060AE /* BedroomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 420FAEDA195D0A9200B060AE /* BedroomViewController.m */; };
 		420FAEDD195D0A9200B060AE /* BedroomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 420FAEDB195D0A9200B060AE /* BedroomViewController.xib */; };
+		9D593A131968E70300EF731E /* KitchenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D593A111968E70300EF731E /* KitchenViewController.m */; };
+		9D593A141968E70300EF731E /* KitchenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D593A121968E70300EF731E /* KitchenViewController.xib */; };
+		9D593A181968E73A00EF731E /* BathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D593A161968E73A00EF731E /* BathViewController.m */; };
+		9D593A191968E73A00EF731E /* BathViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D593A171968E73A00EF731E /* BathViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,12 @@
 		420FAED9195D0A9200B060AE /* BedroomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BedroomViewController.h; sourceTree = "<group>"; };
 		420FAEDA195D0A9200B060AE /* BedroomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BedroomViewController.m; sourceTree = "<group>"; };
 		420FAEDB195D0A9200B060AE /* BedroomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BedroomViewController.xib; sourceTree = "<group>"; };
+		9D593A101968E70300EF731E /* KitchenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KitchenViewController.h; sourceTree = "<group>"; };
+		9D593A111968E70300EF731E /* KitchenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KitchenViewController.m; sourceTree = "<group>"; };
+		9D593A121968E70300EF731E /* KitchenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KitchenViewController.xib; sourceTree = "<group>"; };
+		9D593A151968E73A00EF731E /* BathViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BathViewController.h; sourceTree = "<group>"; };
+		9D593A161968E73A00EF731E /* BathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BathViewController.m; sourceTree = "<group>"; };
+		9D593A171968E73A00EF731E /* BathViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BathViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +92,9 @@
 		420FAE9E195D0A6000B060AE = {
 			isa = PBXGroup;
 			children = (
+				9D593A151968E73A00EF731E /* BathViewController.h */,
+				9D593A161968E73A00EF731E /* BathViewController.m */,
+				9D593A171968E73A00EF731E /* BathViewController.xib */,
 				420FAEB0195D0A6000B060AE /* maya */,
 				420FAEC9195D0A6100B060AE /* mayaTests */,
 				420FAEA9195D0A6000B060AE /* Frameworks */,
@@ -112,6 +125,9 @@
 		420FAEB0195D0A6000B060AE /* maya */ = {
 			isa = PBXGroup;
 			children = (
+				9D593A101968E70300EF731E /* KitchenViewController.h */,
+				9D593A111968E70300EF731E /* KitchenViewController.m */,
+				9D593A121968E70300EF731E /* KitchenViewController.xib */,
 				420FAED9195D0A9200B060AE /* BedroomViewController.h */,
 				420FAEDA195D0A9200B060AE /* BedroomViewController.m */,
 				420FAEDB195D0A9200B060AE /* BedroomViewController.xib */,
@@ -230,6 +246,8 @@
 				420FAEDD195D0A9200B060AE /* BedroomViewController.xib in Resources */,
 				420FAEB5195D0A6000B060AE /* InfoPlist.strings in Resources */,
 				420FAEBD195D0A6000B060AE /* Images.xcassets in Resources */,
+				9D593A141968E70300EF731E /* KitchenViewController.xib in Resources */,
+				9D593A191968E73A00EF731E /* BathViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +266,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D593A181968E73A00EF731E /* BathViewController.m in Sources */,
+				9D593A131968E70300EF731E /* KitchenViewController.m in Sources */,
 				420FAEDC195D0A9200B060AE /* BedroomViewController.m in Sources */,
 				420FAEBB195D0A6000B060AE /* AppDelegate.m in Sources */,
 				420FAEB7195D0A6000B060AE /* main.m in Sources */,
