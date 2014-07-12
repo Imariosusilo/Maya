@@ -13,6 +13,9 @@
 @property (weak, nonatomic) IBOutlet UIButton *backToBedroom;
 - (IBAction)onBackToBedroom:(UITapGestureRecognizer *)sender;
 @property (weak, nonatomic) IBOutlet UIImageView *girlView;
+@property (weak, nonatomic) IBOutlet UIButton *MilkButton;
+@property (weak, nonatomic) IBOutlet UIImageView *CheckMilk;
+- (IBAction)onCheckMilk:(UITapGestureRecognizer *)sender;
 
 @end
 
@@ -30,6 +33,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.CheckMilk.hidden = YES;
     
     self.girlView.transform = CGAffineTransformMakeRotation(-3.0 * M_PI / 180.0);
     
@@ -52,6 +57,13 @@
         vc.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
         
         [self presentViewController:vc animated:YES completion:nil];
+    }
+}
+- (IBAction)onCheckMilk:(UITapGestureRecognizer *)sender {
+    if (_CheckMilk.hidden == YES) {
+        _CheckMilk.hidden = NO;
+    } else if (_CheckMilk.hidden == NO){
+        _CheckMilk.hidden = YES;
     }
 }
 @end

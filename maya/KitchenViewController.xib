@@ -6,6 +6,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KitchenViewController">
             <connections>
+                <outlet property="CheckMilk" destination="RM9-RB-p2S" id="hCc-TS-GgY"/>
+                <outlet property="MilkButton" destination="tyS-AP-9RL" id="14I-pU-PAc"/>
                 <outlet property="backToBedroom" destination="Stg-We-0dK" id="y8u-HH-28M"/>
                 <outlet property="girlView" destination="Siz-NY-7br" id="sWL-yk-EMa"/>
                 <outlet property="view" destination="2" id="3"/>
@@ -20,9 +22,13 @@
                     <rect key="frame" x="59" y="264" width="101" height="77"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.56263799709999995" green="0.85567353020000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <gestureRecognizers/>
                     <state key="normal" title="Drink Milk">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="on6-W6-oRf" appends="YES" id="wCQ-WN-VTM"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H05-Eu-VdH">
                     <rect key="frame" x="59" y="379" width="101" height="77"/>
@@ -57,6 +63,10 @@
                         <outletCollection property="gestureRecognizers" destination="Awj-ww-AF7" appends="YES" id="9LW-Vl-Zm9"/>
                     </connections>
                 </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Check_mark" translatesAutoresizingMaskIntoConstraints="NO" id="RM9-RB-p2S">
+                    <rect key="frame" x="161" y="259" width="92" height="87"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="0.78580083599999995" blue="0.32283785520000002" alpha="1" colorSpace="calibratedRGB"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
@@ -66,8 +76,14 @@
                 <action selector="onBackToBedroom:" destination="-1" id="qUi-zh-NLB"/>
             </connections>
         </tapGestureRecognizer>
+        <tapGestureRecognizer id="on6-W6-oRf">
+            <connections>
+                <action selector="onCheckMilk:" destination="-1" id="yGx-L6-1Nr"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
     <resources>
+        <image name="Check_mark" width="125" height="125"/>
         <image name="girlcolor" width="259" height="417"/>
     </resources>
 </document>
