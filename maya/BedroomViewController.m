@@ -56,17 +56,22 @@
     NSLog(@"Tapped bathroom");
     [UIView animateWithDuration:1 delay:0 options:0 animations:^{
         self.girlView.center = CGPointMake(self.girlView.center.x + 550, self.girlView.center.y);
-    } completion:nil];
+    }  completion:^(BOOL finished) {
+        UIViewController *vc = [[BathViewController alloc] init];
+        vc.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+        
+        [self presentViewController:vc animated:YES completion:nil];
+    }];
 }
 
 - (IBAction)onTapKitchen:(UITapGestureRecognizer *)sender {[UIView animateKeyframesWithDuration:1 delay:0 options:0 animations:^{
     self.girlView.center = CGPointMake(self.girlView.center.x+500, self.girlView.center.y);
-} completion:nil];
-    
+}  completion:^(BOOL finished) {
     UIViewController *vc = [[KitchenViewController alloc] init];
     vc.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     
     [self presentViewController:vc animated:YES completion:nil];
+     }];
 
 }
 

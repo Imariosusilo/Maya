@@ -21,8 +21,8 @@
                     <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="girl" id="Ds0-Be-VyH">
-                    <rect key="frame" x="119" y="103" width="183" height="445"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="girlcolor" id="Ds0-Be-VyH">
+                    <rect key="frame" x="119" y="125" width="216" height="413"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <view contentMode="scaleToFill" id="CSD-Oc-KZk">
@@ -61,6 +61,6 @@
     </objects>
     <resources>
         <image name="background" width="2048" height="1536"/>
-        <image name="girl" width="519" height="834"/>
+        <image name="girlcolor" width="259" height="417"/>
     </resources>
 </document>

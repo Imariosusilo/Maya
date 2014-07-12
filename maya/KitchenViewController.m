@@ -7,8 +7,12 @@
 //
 
 #import "KitchenViewController.h"
+#import "BedroomViewController.h"
 
 @interface KitchenViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *backToBedroom;
+- (IBAction)onBackToBedroom:(UITapGestureRecognizer *)sender;
+@property (weak, nonatomic) IBOutlet UIImageView *girlView;
 
 @end
 
@@ -26,6 +30,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.girlView.transform = CGAffineTransformMakeRotation(-3.0 * M_PI / 180.0);
+    
+    
+    [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionAutoreverse | UIViewAnimationOptionRepeat animations:^{
+        self.girlView.transform = CGAffineTransformMakeRotation(3.0 * M_PI / 180.0);
+    } completion:nil];
+
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -35,4 +47,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)onBackToBedroom:(UITapGestureRecognizer *)sender {
+    {UIViewController *vc = [[BedroomViewController alloc] init];
+        vc.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+        
+        [self presentViewController:vc animated:YES completion:nil];
+    }
+}
 @end

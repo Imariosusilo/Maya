@@ -60,9 +60,9 @@
 		9D593A101968E70300EF731E /* KitchenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KitchenViewController.h; sourceTree = "<group>"; };
 		9D593A111968E70300EF731E /* KitchenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KitchenViewController.m; sourceTree = "<group>"; };
 		9D593A121968E70300EF731E /* KitchenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KitchenViewController.xib; sourceTree = "<group>"; };
-		9D593A151968E73A00EF731E /* BathViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BathViewController.h; sourceTree = "<group>"; };
-		9D593A161968E73A00EF731E /* BathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BathViewController.m; sourceTree = "<group>"; };
-		9D593A171968E73A00EF731E /* BathViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BathViewController.xib; sourceTree = "<group>"; };
+		9D593A151968E73A00EF731E /* BathViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BathViewController.h; path = ../BathViewController.h; sourceTree = "<group>"; };
+		9D593A161968E73A00EF731E /* BathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BathViewController.m; path = ../BathViewController.m; sourceTree = "<group>"; };
+		9D593A171968E73A00EF731E /* BathViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BathViewController.xib; path = ../BathViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,9 +92,6 @@
 		420FAE9E195D0A6000B060AE = {
 			isa = PBXGroup;
 			children = (
-				9D593A151968E73A00EF731E /* BathViewController.h */,
-				9D593A161968E73A00EF731E /* BathViewController.m */,
-				9D593A171968E73A00EF731E /* BathViewController.xib */,
 				420FAEB0195D0A6000B060AE /* maya */,
 				420FAEC9195D0A6100B060AE /* mayaTests */,
 				420FAEA9195D0A6000B060AE /* Frameworks */,
@@ -125,6 +122,9 @@
 		420FAEB0195D0A6000B060AE /* maya */ = {
 			isa = PBXGroup;
 			children = (
+				9D593A151968E73A00EF731E /* BathViewController.h */,
+				9D593A161968E73A00EF731E /* BathViewController.m */,
+				9D593A171968E73A00EF731E /* BathViewController.xib */,
 				9D593A101968E70300EF731E /* KitchenViewController.h */,
 				9D593A111968E70300EF731E /* KitchenViewController.m */,
 				9D593A121968E70300EF731E /* KitchenViewController.xib */,

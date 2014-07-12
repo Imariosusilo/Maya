@@ -6,6 +6,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KitchenViewController">
             <connections>
+                <outlet property="backToBedroom" destination="Stg-We-0dK" id="y8u-HH-28M"/>
+                <outlet property="girlView" destination="Siz-NY-7br" id="sWL-yk-EMa"/>
                 <outlet property="view" destination="2" id="3"/>
             </connections>
         </placeholder>
@@ -13,8 +15,59 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="2">
             <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyS-AP-9RL">
+                    <rect key="frame" x="59" y="264" width="101" height="77"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.56263799709999995" green="0.85567353020000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Drink Milk">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H05-Eu-VdH">
+                    <rect key="frame" x="59" y="379" width="101" height="77"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.56263799709999995" green="0.85567353020000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Eat Cereal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jgs-Nf-DEr">
+                    <rect key="frame" x="59" y="489" width="101" height="77"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.56263799709999995" green="0.85567353020000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Eat Fruits">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="girlcolor" translatesAutoresizingMaskIntoConstraints="NO" id="Siz-NY-7br">
+                    <rect key="frame" x="463" y="156" width="240" height="399"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Stg-We-0dK">
+                    <rect key="frame" x="59" y="48" width="121" height="79"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.48885295010000002" green="0.41307485840000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <gestureRecognizers/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" red="0.81505531259999997" green="0.99953948169999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="Awj-ww-AF7" appends="YES" id="9LW-Vl-Zm9"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" red="1" green="0.78580083599999995" blue="0.32283785520000002" alpha="1" colorSpace="calibratedRGB"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
         </view>
+        <tapGestureRecognizer id="Awj-ww-AF7">
+            <connections>
+                <action selector="onBackToBedroom:" destination="-1" id="qUi-zh-NLB"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
+    <resources>
+        <image name="girlcolor" width="259" height="417"/>
+    </resources>
 </document>
