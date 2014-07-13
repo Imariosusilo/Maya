@@ -9,20 +9,29 @@
                 <outlet property="CheckMilk" destination="RM9-RB-p2S" id="hCc-TS-GgY"/>
                 <outlet property="MilkButton" destination="tyS-AP-9RL" id="14I-pU-PAc"/>
                 <outlet property="backToBedroom" destination="Stg-We-0dK" id="y8u-HH-28M"/>
+                <outlet property="checkCereal" destination="9WQ-eh-1tl" id="KLm-l9-hEa"/>
+                <outlet property="checkFruits" destination="Z2y-kT-rz0" id="gCE-Wr-dxB"/>
+                <outlet property="eatCereal" destination="H05-Eu-VdH" id="ckn-5v-N37"/>
+                <outlet property="eatFruits" destination="Jgs-Nf-DEr" id="boU-bl-y7E"/>
                 <outlet property="girlView" destination="Siz-NY-7br" id="sWL-yk-EMa"/>
                 <outlet property="view" destination="2" id="3"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="2">
-            <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kitchenMaya2" translatesAutoresizingMaskIntoConstraints="NO" id="Nnt-zy-FtH">
+                    <rect key="frame" x="-60" y="-45" width="1135" height="813"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyS-AP-9RL">
-                    <rect key="frame" x="59" y="264" width="101" height="77"/>
+                    <rect key="frame" x="48" y="253" width="180" height="97"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.56263799709999995" green="0.85567353020000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <gestureRecognizers/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="27"/>
                     <state key="normal" title="Drink Milk">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -31,31 +40,42 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H05-Eu-VdH">
-                    <rect key="frame" x="59" y="379" width="101" height="77"/>
+                    <rect key="frame" x="48" y="398" width="180" height="97"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.56263799709999995" green="0.85567353020000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <gestureRecognizers/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="27"/>
                     <state key="normal" title="Eat Cereal">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="dWp-vb-oXZ" appends="YES" id="X5y-5p-YzI"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jgs-Nf-DEr">
-                    <rect key="frame" x="59" y="489" width="101" height="77"/>
+                    <rect key="frame" x="48" y="531" width="180" height="97"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.56263799709999995" green="0.85567353020000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <gestureRecognizers/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="27"/>
                     <state key="normal" title="Eat Fruits">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="uYe-so-emn" appends="YES" id="cTa-9p-G0w"/>
+                    </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="girlcolor" translatesAutoresizingMaskIntoConstraints="NO" id="Siz-NY-7br">
-                    <rect key="frame" x="463" y="156" width="240" height="399"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="girlcolor" translatesAutoresizingMaskIntoConstraints="NO" id="Siz-NY-7br">
+                    <rect key="frame" x="584" y="235" width="276" height="458"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Stg-We-0dK">
-                    <rect key="frame" x="59" y="48" width="121" height="79"/>
+                    <rect key="frame" x="48" y="43" width="208" height="140"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.48885295010000002" green="0.41307485840000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="1" green="0.26998098190000003" blue="0.31717404110000003" alpha="1" colorSpace="calibratedRGB"/>
                     <gestureRecognizers/>
-                    <state key="normal" title="Button">
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="27"/>
+                    <state key="normal" title="Back to Room">
                         <color key="titleColor" red="0.81505531259999997" green="0.99953948169999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -64,12 +84,21 @@
                     </connections>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Check_mark" translatesAutoresizingMaskIntoConstraints="NO" id="RM9-RB-p2S">
-                    <rect key="frame" x="161" y="259" width="92" height="87"/>
+                    <rect key="frame" x="230" y="258" width="92" height="87"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Check_mark" translatesAutoresizingMaskIntoConstraints="NO" id="9WQ-eh-1tl">
+                    <rect key="frame" x="230" y="408" width="92" height="87"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Check_mark" translatesAutoresizingMaskIntoConstraints="NO" id="Z2y-kT-rz0">
+                    <rect key="frame" x="220" y="541" width="92" height="87"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="0.78580083599999995" blue="0.32283785520000002" alpha="1" colorSpace="calibratedRGB"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
         </view>
         <tapGestureRecognizer id="Awj-ww-AF7">
             <connections>
@@ -81,9 +110,20 @@
                 <action selector="onCheckMilk:" destination="-1" id="yGx-L6-1Nr"/>
             </connections>
         </tapGestureRecognizer>
+        <tapGestureRecognizer id="dWp-vb-oXZ">
+            <connections>
+                <action selector="onEatCereal:" destination="-1" id="U7Z-aQ-shj"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="uYe-so-emn">
+            <connections>
+                <action selector="onEatFruits:" destination="-1" id="KPj-Xc-GJS"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
     <resources>
         <image name="Check_mark" width="125" height="125"/>
         <image name="girlcolor" width="259" height="417"/>
+        <image name="kitchenMaya2" width="514" height="385"/>
     </resources>
 </document>

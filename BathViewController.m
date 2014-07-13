@@ -14,6 +14,15 @@
 @property (weak, nonatomic) IBOutlet UIButton *backToRoom;
 - (IBAction)onBackToRoom:(UITapGestureRecognizer *)sender;
 @property (weak, nonatomic) IBOutlet UIImageView *girlView;
+@property (weak, nonatomic) IBOutlet UIButton *brushTeeth;
+@property (weak, nonatomic) IBOutlet UIButton *takeShower;
+@property (weak, nonatomic) IBOutlet UIButton *goPotty;
+@property (weak, nonatomic) IBOutlet UIImageView *checkBrush;
+@property (weak, nonatomic) IBOutlet UIImageView *checkShower;
+@property (weak, nonatomic) IBOutlet UIImageView *checkPotty;
+- (IBAction)onBrush:(UITapGestureRecognizer *)sender;
+- (IBAction)onShower:(UITapGestureRecognizer *)sender;
+- (IBAction)onPotty:(UITapGestureRecognizer *)sender;
 
 @end
 
@@ -32,6 +41,10 @@
 {
     [super viewDidLoad];
     
+    self.checkBrush.hidden = YES;
+    self.checkShower.hidden = YES;
+    self.checkPotty.hidden = YES;
+    
     self.girlView.transform = CGAffineTransformMakeRotation(-3.0 * M_PI / 180.0);
     
     
@@ -49,5 +62,32 @@
     vc.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     
     [self presentViewController:vc animated:YES completion:nil];
+}
+- (IBAction)onBrush:(UITapGestureRecognizer *)sender {
+    if (self.checkBrush.hidden == YES) {
+        self.checkBrush.hidden = NO;
+    } else if (self.checkBrush.hidden == NO){
+        self.checkBrush.hidden = YES;
+    }
+
+}
+
+- (IBAction)onShower:(UITapGestureRecognizer *)sender {
+    if (self.checkShower.hidden == YES) {
+        self.checkShower.hidden = NO;
+    } else if (self.checkShower.hidden == NO){
+        self.checkShower.hidden = YES;
+    }
+
+}
+
+- (IBAction)onPotty:(UITapGestureRecognizer *)sender {
+    if (self.checkPotty.hidden == YES) {
+        self.checkPotty.hidden = NO;
+    } else if (self.checkPotty.hidden == NO){
+        self.checkPotty.hidden = YES;
+    }
+
+    
 }
 @end

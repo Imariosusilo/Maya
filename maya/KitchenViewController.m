@@ -15,7 +15,13 @@
 @property (weak, nonatomic) IBOutlet UIImageView *girlView;
 @property (weak, nonatomic) IBOutlet UIButton *MilkButton;
 @property (weak, nonatomic) IBOutlet UIImageView *CheckMilk;
+@property (weak, nonatomic) IBOutlet UIImageView *checkCereal;
+@property (weak, nonatomic) IBOutlet UIImageView *checkFruits;
 - (IBAction)onCheckMilk:(UITapGestureRecognizer *)sender;
+- (IBAction)onEatCereal:(UITapGestureRecognizer *)sender;
+- (IBAction)onEatFruits:(UITapGestureRecognizer *)sender;
+@property (weak, nonatomic) IBOutlet UIButton *eatCereal;
+@property (weak, nonatomic) IBOutlet UIButton *eatFruits;
 
 @end
 
@@ -35,6 +41,8 @@
     [super viewDidLoad];
     
     self.CheckMilk.hidden = YES;
+    self.checkCereal.hidden = YES;
+    self.checkFruits.hidden = YES;
     
     self.girlView.transform = CGAffineTransformMakeRotation(-3.0 * M_PI / 180.0);
     
@@ -65,5 +73,24 @@
     } else if (_CheckMilk.hidden == NO){
         _CheckMilk.hidden = YES;
     }
+}
+
+- (IBAction)onEatCereal:(UITapGestureRecognizer *)sender {
+    if (self.checkCereal.hidden == YES) {
+        self.checkCereal.hidden =NO;
+        
+    } else if (self.checkCereal.hidden == NO){
+        self.checkCereal.hidden= YES;
+    }
+}
+
+- (IBAction)onEatFruits:(UITapGestureRecognizer *)sender {
+    if (self.checkFruits.hidden == YES) {
+        self.checkFruits.hidden =NO;
+        
+    } else if (self.checkFruits.hidden == NO){
+        self.checkFruits.hidden= YES;
+    }
+
 }
 @end

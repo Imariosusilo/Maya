@@ -17,12 +17,12 @@
             <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" id="XJb-0E-ZbD">
-                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgmaya4" id="XJb-0E-ZbD">
+                    <rect key="frame" x="-2" y="0.0" width="1029" height="768"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="girlcolor" id="Ds0-Be-VyH">
-                    <rect key="frame" x="119" y="125" width="216" height="413"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="girlcolor" id="Ds0-Be-VyH">
+                    <rect key="frame" x="139" y="230" width="212" height="384"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <view contentMode="scaleToFill" id="CSD-Oc-KZk">
@@ -60,7 +60,7 @@
         </tapGestureRecognizer>
     </objects>
     <resources>
-        <image name="background" width="2048" height="1536"/>
+        <image name="bgmaya4" width="514" height="385"/>
         <image name="girlcolor" width="259" height="417"/>
     </resources>
 </document>
