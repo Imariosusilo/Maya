@@ -10,6 +10,7 @@
 #import "BedroomViewController.h"
 
 @interface BathViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *doneWindow;
 
 @property (weak, nonatomic) IBOutlet UIButton *backToRoom;
 - (IBAction)onBackToRoom:(UITapGestureRecognizer *)sender;
@@ -23,7 +24,7 @@
 - (IBAction)onBrush:(UITapGestureRecognizer *)sender;
 - (IBAction)onShower:(UITapGestureRecognizer *)sender;
 - (IBAction)onPotty:(UITapGestureRecognizer *)sender;
-
+-(void)checkResponse;
 @end
 
 @implementation BathViewController
@@ -40,17 +41,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.doneWindow.hidden = YES;
     
     self.checkBrush.hidden = YES;
     self.checkShower.hidden = YES;
     self.checkPotty.hidden = YES;
     
+    NSLog(@"bathroom!");
     self.girlView.transform = CGAffineTransformMakeRotation(-3.0 * M_PI / 180.0);
-    
     
     [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionAutoreverse | UIViewAnimationOptionRepeat animations:^{
         self.girlView.transform = CGAffineTransformMakeRotation(3.0 * M_PI / 180.0);
     } completion:nil];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -58,10 +61,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)onBackToRoom:(UITapGestureRecognizer *)sender {UIViewController *vc = [[BedroomViewController alloc] init];
-    vc.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+- (IBAction)onBackToRoom:(UITapGestureRecognizer *)sender {//UIViewController *vc = [[BedroomViewController alloc] init];
+    //vc.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     
-    [self presentViewController:vc animated:YES completion:nil];
+    //[self presentViewController:vc animated:YES completion:nil];
+     [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (IBAction)onBrush:(UITapGestureRecognizer *)sender {
     if (self.checkBrush.hidden == YES) {
@@ -69,6 +73,7 @@
     } else if (self.checkBrush.hidden == NO){
         self.checkBrush.hidden = YES;
     }
+    [self checkResponse];
 
 }
 
@@ -78,7 +83,7 @@
     } else if (self.checkShower.hidden == NO){
         self.checkShower.hidden = YES;
     }
-
+    [self checkResponse];
 }
 
 - (IBAction)onPotty:(UITapGestureRecognizer *)sender {
@@ -87,7 +92,18 @@
     } else if (self.checkPotty.hidden == NO){
         self.checkPotty.hidden = YES;
     }
-
+    [self checkResponse];
     
+}
+-(void)checkResponse{
+    if(self.checkPotty.hidden == NO &&self.checkBrush.hidden==NO&&self.checkShower.hidden==NO)
+    {
+        self.doneWindow.hidden =NO;
+        self.doneWindow.alpha=0;
+        [UIView animateWithDuration:2 animations:^{
+            self.doneWindow.alpha=1;
+        }];
+        
+    }
 }
 @end

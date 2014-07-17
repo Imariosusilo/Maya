@@ -11,6 +11,7 @@
                 <outlet property="checkBrush" destination="88L-JK-LDI" id="Lrj-8i-EyD"/>
                 <outlet property="checkPotty" destination="d1c-56-dvb" id="Psv-wm-dyk"/>
                 <outlet property="checkShower" destination="cgc-8P-RL0" id="whi-M6-Z5A"/>
+                <outlet property="doneWindow" destination="0ke-fa-H0k" id="I6s-Be-nkl"/>
                 <outlet property="girlView" destination="pSs-dY-aql" id="z23-Yk-hCG"/>
                 <outlet property="goPotty" destination="Z5Q-a2-Fri" id="YR2-NP-oMa"/>
                 <outlet property="takeShower" destination="YWM-J6-Qxv" id="Qdg-2M-bpF"/>
@@ -79,7 +80,7 @@
                         <outletCollection property="gestureRecognizers" destination="qdS-3c-iQR" appends="YES" id="eLf-kv-FHH"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="girlcolor" translatesAutoresizingMaskIntoConstraints="NO" id="pSs-dY-aql">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="girlcolor2" translatesAutoresizingMaskIntoConstraints="NO" id="pSs-dY-aql">
                     <rect key="frame" x="515" y="244" width="323" height="497"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
@@ -93,6 +94,10 @@
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Check_mark" translatesAutoresizingMaskIntoConstraints="NO" id="d1c-56-dvb">
                     <rect key="frame" x="231" y="469" width="101" height="97"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Duckies2" translatesAutoresizingMaskIntoConstraints="NO" id="0ke-fa-H0k">
+                    <rect key="frame" x="634" y="13" width="265" height="154"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
             </subviews>
@@ -123,7 +128,8 @@
     </objects>
     <resources>
         <image name="Check_mark" width="125" height="125"/>
+        <image name="Duckies2" width="313" height="181"/>
         <image name="bathroommaya" width="514" height="385"/>
-        <image name="girlcolor" width="259" height="417"/>
+        <image name="girlcolor2" width="259" height="417"/>
     </resources>
 </document>

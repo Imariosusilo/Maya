@@ -22,6 +22,8 @@
 - (IBAction)onEatFruits:(UITapGestureRecognizer *)sender;
 @property (weak, nonatomic) IBOutlet UIButton *eatCereal;
 @property (weak, nonatomic) IBOutlet UIButton *eatFruits;
+@property (weak, nonatomic) IBOutlet UIView *doneView;
+-(void)CheckResponse;
 
 @end
 
@@ -39,6 +41,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.doneView.hidden = YES;
     
     self.CheckMilk.hidden = YES;
     self.checkCereal.hidden = YES;
@@ -61,11 +65,12 @@
 }
 
 - (IBAction)onBackToBedroom:(UITapGestureRecognizer *)sender {
-    {UIViewController *vc = [[BedroomViewController alloc] init];
-        vc.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    //{UIViewController *vc = [[BedroomViewController alloc] init];
+        //vc.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
         
-        [self presentViewController:vc animated:YES completion:nil];
-    }
+        //[self presentViewController:vc animated:YES completion:nil];
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
 }
 - (IBAction)onCheckMilk:(UITapGestureRecognizer *)sender {
     if (_CheckMilk.hidden == YES) {
@@ -73,6 +78,7 @@
     } else if (_CheckMilk.hidden == NO){
         _CheckMilk.hidden = YES;
     }
+    [self CheckResponse];
 }
 
 - (IBAction)onEatCereal:(UITapGestureRecognizer *)sender {
@@ -82,7 +88,10 @@
     } else if (self.checkCereal.hidden == NO){
         self.checkCereal.hidden= YES;
     }
+    [self CheckResponse];
 }
+
+
 
 - (IBAction)onEatFruits:(UITapGestureRecognizer *)sender {
     if (self.checkFruits.hidden == YES) {
@@ -91,6 +100,23 @@
     } else if (self.checkFruits.hidden == NO){
         self.checkFruits.hidden= YES;
     }
+    [self CheckResponse];
+
 
 }
+
+-(void)CheckResponse{
+    if (self.checkCereal.hidden==NO && self.CheckMilk.hidden==NO && self.checkFruits.hidden==NO) {
+        
+        self.doneView.hidden = NO;
+        self.doneView.alpha=0;
+        [UIView animateWithDuration:1 animations:^{
+            self.doneView.alpha=1;
+        
+        }];
+        
+    }
+            
+        
+    }
 @end

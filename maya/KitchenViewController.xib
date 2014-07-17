@@ -11,6 +11,7 @@
                 <outlet property="backToBedroom" destination="Stg-We-0dK" id="y8u-HH-28M"/>
                 <outlet property="checkCereal" destination="9WQ-eh-1tl" id="KLm-l9-hEa"/>
                 <outlet property="checkFruits" destination="Z2y-kT-rz0" id="gCE-Wr-dxB"/>
+                <outlet property="doneView" destination="c6b-4S-BgF" id="jCm-Te-5j8"/>
                 <outlet property="eatCereal" destination="H05-Eu-VdH" id="ckn-5v-N37"/>
                 <outlet property="eatFruits" destination="Jgs-Nf-DEr" id="boU-bl-y7E"/>
                 <outlet property="girlView" destination="Siz-NY-7br" id="sWL-yk-EMa"/>
@@ -65,8 +66,8 @@
                         <outletCollection property="gestureRecognizers" destination="uYe-so-emn" appends="YES" id="cTa-9p-G0w"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="girlcolor" translatesAutoresizingMaskIntoConstraints="NO" id="Siz-NY-7br">
-                    <rect key="frame" x="584" y="235" width="276" height="458"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="girlcolor2" translatesAutoresizingMaskIntoConstraints="NO" id="Siz-NY-7br">
+                    <rect key="frame" x="494" y="234" width="276" height="458"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Stg-We-0dK">
@@ -95,6 +96,16 @@
                     <rect key="frame" x="220" y="541" width="92" height="87"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c6b-4S-BgF">
+                    <rect key="frame" x="648" y="43" width="277" height="171"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="cWw-ce-Kkp">
+                            <rect key="frame" x="7" y="13" width="251" height="158"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                    </subviews>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="0.78580083599999995" blue="0.32283785520000002" alpha="1" colorSpace="calibratedRGB"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
@@ -123,7 +134,8 @@
     </objects>
     <resources>
         <image name="Check_mark" width="125" height="125"/>
-        <image name="girlcolor" width="259" height="417"/>
+        <image name="apple" width="313" height="181"/>
+        <image name="girlcolor2" width="259" height="417"/>
         <image name="kitchenMaya2" width="514" height="385"/>
     </resources>
 </document>
